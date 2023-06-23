@@ -122,4 +122,55 @@ RDCP is designed to be used over an insecure connection. However, it is also des
 
 There's no authentication mechanism available in RDCP since it is a stateless protocol like HTTP. It is possible and recommended to use Authorization header for authentication like used in HTTP. It is also possible to use a custom header for authentication.
 
+## Headers
+
+### `Version`
+
+Version header indicates the version the client/server is using to communicate. Communicating parties can tolerate version differences as long as the major version is the same. If the major version is different, communicating parties should not communicate.
+
+- Sent by: `Client`/`Server`
+- Type: `const string enum`, Values: (`0.1`)
+
+### `Time`
+
+Time header indicates the time the request is sent. It is used to calculate the latency of the request. It is also used to calculate the time the request is received and replied.
+
+- Sent by: `Client`
+- Type: `int64`
+
+### `From`
+
+From header indicates the IP address of the client. It is used to identify the client.
+
+- Sent by: `Server`
+- Type: `string`
+
+### `Received`
+
+Received header indicates the local time of the server when request is received. It is used to calculate the latency of the request.
+
+- Sent by: `Server`
+- Type: `int64`
+
+### `Replied`
+
+Replied header indicates the local time of the server when request is replied. It is used to calculate the latency of the request.
+
+- Sent by: `Server`
+- Type: `int64`
+
+### `Host`
+
+Host header indicates the host the request is sent to. It is used to proxy the request to the target.
+
+- Sent by: `Client`
+- Type: `string`
+
+### `Proxied-To`
+
+Proxied-To header indicates the host the request is proxied to. It is used to proxy the request to the target.
+
+- Sent by: `Server`
+- Type: `string`
+
 
