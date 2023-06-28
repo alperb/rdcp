@@ -1,0 +1,22 @@
+Example Order Packet
+---------------------
+Client->Server
+
+ORD
+Version: 0.1
+Time: 1686604453
+
+OrderedAction(parameter1=value1,parameter2=value2)
+
+
+Example Order Packet - Response
+-------------------------------
+Server->Client
+
+R/ORD
+Version: 0.1
+From: 192.168.0.1
+Received: 1686604453
+Replied: 1686604700
+
+Hello, World!

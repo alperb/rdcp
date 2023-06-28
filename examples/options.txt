@@ -1,0 +1,38 @@
+Example Options Packet
+---------------------
+Client->Server
+1)
+OPT
+Version: 0.1
+Time: 1686604453
+
+localhost?
+
+2)
+OPT
+Version: 0.1
+Time: 1686604453
+
+localhost=192.168.0.7
+
+
+Example Options Packet - Response
+-------------------------------
+Server->Client
+1)
+R/OPT
+Version: 0.1
+From: 192.168.0.1
+Received: 1686604453
+Replied: 1686604700
+
+192.168.0.7
+
+2)
+R/OPT
+Version: 0.1
+From: 192.168.0.1
+Received: 1686604453
+Replied: 1686604700
+
+OK

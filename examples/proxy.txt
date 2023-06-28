@@ -1,0 +1,24 @@
+Example Proxy Packet
+---------------------
+Client->Server
+
+PRX
+Version: 0.1
+Time: 1686604453
+Host: example.com
+
+GET / HTTP/1.1
+Host: example.com
+
+
+Example Proxy Packet - Response
+-------------------------------
+Server->Client
+
+R/PRX
+Version: 0.1
+From: 192.168.0.1
+Received: 1686604453
+Replied: 1686604700
+
+Hello, World!

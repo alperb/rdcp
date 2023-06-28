@@ -9,7 +9,9 @@ import (
 func main() {
 	server := S.NewRDCPServer("127.0.0.1", "8080")
 
-	server.Handle(C.ORDER, func(req *C.Request, res *C.Response) error {
+	server.HandleOrder("Action1", func(req *C.Request, res *C.Response) error {
+		p := req.GetActionParameters()
+		fmt.Printf("p: %v\n", p)
 		res.Write([]byte("Hello World"))
 		return nil
 	})

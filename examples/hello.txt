@@ -3,7 +3,6 @@ Example Hello Packet
 Client->Server
 
 HELLO
-Self: 192.168.0.1
 Version: 0.1
 Time: 1686604453
 
@@ -13,7 +12,6 @@ Example Hello Packet - Response
 Server->Client
 
 R/HELLO
-Self: 192.168.0.2
-From: 192.168.0.1
+Recipient: 192.168.0.1
 Received: 1686604453
 Version: 0.1

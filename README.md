@@ -17,7 +17,7 @@ RDCP presents 4 different methods of request.
 
 ### `ORDER`
 
-ORDER method is used to send a command to the daemon. It is a simple string, and some optional parameters. Daemon is expected to execute a command/function based on the string, and return a response. It is similar to RPC.
+ORDER method is used to send a command to the daemon. It is a simple string, and some optional parameters. Daemon is expected to execute a command/function based on the string, and return a response. It is similar to RPC but the message is not in binary format.
 
 #### Request
 ```

@@ -1,0 +1,20 @@
+Example Heartbeat Packet
+---------------------
+Client->Server
+
+HBT
+Version: 0.1
+Time: 1686604453
+
+
+Example Heartbeat Packet - Response
+-------------------------------
+Server->Client
+
+R/HBT
+Version: 0.1
+From: 192.168.0.1
+Received: 1686604453
+Replied: 1686604700
+
+OK
