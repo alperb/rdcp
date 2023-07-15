@@ -43,7 +43,7 @@ Hello, World!
 
 PROXY method is used to proxy a connection to the daemon. It is used to connect to a daemon, and send/receive data to/from it. It is similar to SSH tunneling.
 
-Daemon is expected to proxy the request to the target, and return the response. It is similar to a SOCKS proxy.
+Daemon is expected to proxy the request to the target, and return the response.
 
 #### Request
 ```
@@ -94,7 +94,7 @@ Replied: 1686604700
 
 ### `HEARTBEAT`
 
-HEARTBEAT method is used to keep the connection alive. It is used to keep the connection alive, and return the response. It is similar to HTTP HEAD. It can be used to keep the connection alive.
+HEARTBEAT method is used to ping the server. It is similar to HTTP HEAD. It can be used to keep the connection alive.
 
 #### Request
 ```
