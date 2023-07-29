@@ -2,7 +2,7 @@
 Remote Daemon Control Protocol
 
 ## Introduction
-rdcp is a protocol for controlling a daemon remotely. It is designed to be simple and easy to implement. It is also designed to be secure, and to be able to be used over an insecure connection.
+rdcp is a protocol for controlling a daemon remotely. It is designed to be simple and easy to implement. It is also designed to be secure, and to be able to be used over an insecure connection. It's still in development, not meant for use yet.
 
 Initial motivation of implementation is to use it with a remote docker daemon control tool ([drun](https://github.com/alperb/drun)). However, it is not limited to docker, and can be used with any daemon, if tailored to that daemon.
 
